@@ -5,16 +5,19 @@ token = ""
 
 class APIUtils:
 
-    def get_token(self, playwright:Playwright):
+    def get_token(self, playwright:Playwright, user_credentials):
+        user_name = user_credentials["username"]
+        user_password = user_credentials["password"]
+
         api_request_context = playwright.request.new_context(base_url="https://rahulshettyacademy.com")
         response = api_request_context.post(
             "/api/ecom/auth/login",
-                data={"userEmail": "aniruddhabasagare28@gmail.com","userPassword": "Admin123!@#"})
+                data={"userEmail": user_name,"userPassword": user_password})
         assert response.ok
         return response.json()["token"]
 
-    def create_order(self, playwright:Playwright):
-        token = self.get_token(playwright)
+    def create_order(self, playwright:Playwright, user_credentials):
+        token = self.get_token(playwright, user_credentials)
         api_request_context = playwright.request.new_context(base_url="https://rahulshettyacademy.com")
         response = api_request_context.post("/api/ecom/order/create-order",
                                  data=pay_load,

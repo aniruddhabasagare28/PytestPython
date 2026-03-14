@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import Page, Playwright, expect
 from pytest_playwright.pytest_playwright import page
 
@@ -9,6 +10,7 @@ def intercept_response(route):
         json= fake_payload_order_response
     )
 
+@pytest.mark.smoke
 def test_network(page:Page):
 
     # login
@@ -22,7 +24,6 @@ def test_network(page:Page):
 
     order_text = page.locator(".mt-4").text_content()
     print(order_text)
-
 
 def test_session_storage(playwright:Playwright):
     api_utils = APIUtils()

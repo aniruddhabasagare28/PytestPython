@@ -8,7 +8,7 @@ from pytest_playwright.pytest_playwright import new_context
 
 from page_objects.login import LoginPage
 from page_objects.dashboard import dashboard
-from utils.apiBase import APIUtils
+from utils.apiFrameworkBase import APIUtils
 
 BASE_DIR = Path(__file__).resolve().parent
 credentials_path = BASE_DIR / "data" / "credentials.json"
@@ -18,6 +18,7 @@ with open(credentials_path) as f:
     print(credentials)
     user_credentials_list = credentials['user_credentials']
 
+@pytest.mark.smoke
 @pytest.mark.parametrize('user_credentials', user_credentials_list)
 def test_e2e_web_api(playwright:Playwright, browserInstance, user_credentials):
     user_name = user_credentials["username"]
