@@ -1,3 +1,6 @@
+from page_objects.dashboard import dashboard
+
+
 class LoginPage:
 
     def __init__(self,page):
@@ -10,3 +13,5 @@ class LoginPage:
         self.page.get_by_placeholder("email@example.com").fill(usr_name)
         self.page.get_by_placeholder("enter your passsword").fill(usr_password)
         self.page.get_by_role("button", name="Login").click()
+        dashboard_page = dashboard(self.page)
+        return dashboard_page

@@ -31,11 +31,10 @@ def test_e2e_web_api(playwright:Playwright, user_credentials):
 
     # login
     loginpage.navigate_to_login_page()
-    loginpage.login_page(user_name, user_password)
+    dashboard_page = loginpage.login_page(user_name, user_password)
 
-    dashboard_page = dashboard(page)
-    dashboard_page.navigate_to_order()
+    orderHistoryPage = dashboard_page.navigate_to_order()
+    orderDetailsPage = orderHistoryPage.selectOrder(order_id)
 
-
-
+    orderDetailsPage.verifyOrderMessage()
 

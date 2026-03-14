@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9748df1c-6750-44f4-90c4-90a290bb7083" name="Changes" comment="This is the first Commmit">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="9748df1c-6750-44f4-90c4-90a290bb7083" name="Changes" comment="- page object factoring code">
+      <change afterPath="$PROJECT_DIR$/playwright/page_objects/OrderHistory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playwright/page_objects/orderDetails.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestPyTestValidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright/page_objects/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/page_objects/dashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright/page_objects/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/page_objects/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright/test_framework_web_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/test_framework_web_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,63 +51,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for TestPyTestValidation.test_initialCheck.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_more_validation.test_confirm_popup.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_more_validation.test_handle_alert.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_more_validation.test_handle_frame.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_more_validation.test_handle_table.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_more_validation.test_ui_cheks.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_network_mock_request.test_network.executor&quot;: &quot;Debug&quot;,
-    &quot;Python tests.Python tests for playwright.test_network_mock_response.test_session_storage.executor&quot;: &quot;Debug&quot;,
-    &quot;Python tests.Python tests for playwright.test_network_one.test_network.executor&quot;: &quot;Debug&quot;,
-    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_child_window_handle.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_firefox_browser.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_login_practice.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_login_practice_wrong_credentials.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_playwright_basics_shortcut.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.test_web_api.test_e2e_web_api.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for playwright.utils.test_framework_web_api.test_e2e_web_api.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_TestPyTestValidation.test_initialCheck.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in PytestPython.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in Test2PyTestValidation.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in TestPyTestValidation.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_TestPyTestValidation.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_playwright_basics.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_TestPyTestValidation.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in $AffectedModuleNames$.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in PyCharm 2025.3.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_network_one.pay.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/UdemyCourse/Pycharm/PytestPython/playwright&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for TestPyTestValidation.test_initialCheck.executor": "Run",
+    "Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api.executor": "Debug",
+    "Python tests.Python tests for playwright.test_more_validation.test_confirm_popup.executor": "Run",
+    "Python tests.Python tests for playwright.test_more_validation.test_handle_alert.executor": "Run",
+    "Python tests.Python tests for playwright.test_more_validation.test_handle_frame.executor": "Run",
+    "Python tests.Python tests for playwright.test_more_validation.test_handle_table.executor": "Run",
+    "Python tests.Python tests for playwright.test_more_validation.test_ui_cheks.executor": "Run",
+    "Python tests.Python tests for playwright.test_network_mock_request.test_network.executor": "Debug",
+    "Python tests.Python tests for playwright.test_network_mock_response.test_session_storage.executor": "Debug",
+    "Python tests.Python tests for playwright.test_network_one.test_network.executor": "Debug",
+    "Python tests.Python tests for playwright.test_playwright_basics.test_child_window_handle.executor": "Run",
+    "Python tests.Python tests for playwright.test_playwright_basics.test_firefox_browser.executor": "Run",
+    "Python tests.Python tests for playwright.test_playwright_basics.test_login_practice.executor": "Run",
+    "Python tests.Python tests for playwright.test_playwright_basics.test_login_practice_wrong_credentials.executor": "Run",
+    "Python tests.Python tests for playwright.test_playwright_basics.test_playwright_basics_shortcut.executor": "Run",
+    "Python tests.Python tests for playwright.test_web_api.test_e2e_web_api.executor": "Run",
+    "Python tests.Python tests for playwright.utils.test_framework_web_api.test_e2e_web_api.executor": "Run",
+    "Python tests.Python tests for test_TestPyTestValidation.test_initialCheck.executor": "Run",
+    "Python tests.Python tests in PytestPython.executor": "Run",
+    "Python tests.Python tests in Test2PyTestValidation.py.executor": "Run",
+    "Python tests.Python tests in TestPyTestValidation.py.executor": "Run",
+    "Python tests.Python tests in test_TestPyTestValidation.py.executor": "Run",
+    "Python tests.Python tests in test_playwright_basics.py.executor": "Run",
+    "Python tests.pytest for test_TestPyTestValidation.executor": "Run",
+    "Python tests.pytest in $AffectedModuleNames$.executor": "Run",
+    "Python tests.pytest in PyCharm 2025.3.3.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.test_network_one.pay.executor": "Debug",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/UdemyCourse/Pycharm/PytestPython/playwright",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\UdemyCourse\Pycharm\PytestPython\playwright" />
@@ -367,19 +370,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test_network_mock_response" />
-      <item itemvalue="Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api" />
+      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_session_storage" />
+      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_request.test_network" />
+      <item itemvalue="Python tests.Python tests for playwright.test_web_api.test_e2e_web_api" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_confirm_popup" />
-      <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_alert" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_frame" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_table" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_ui_cheks" />
-      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_request.test_network" />
-      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_network" />
-      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_session_storage" />
-      <item itemvalue="Python tests.Python tests for playwright.test_playwright_basics.test_child_window_handle" />
-      <item itemvalue="Python tests.Python tests for playwright.test_web_api.test_e2e_web_api" />
-      <item itemvalue="Python tests.Python tests in test_playwright_basics.py" />
       <item itemvalue="Python tests.pytest in PyCharm 2025.3.3" />
+      <item itemvalue="Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api" />
+      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_network" />
+      <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_alert" />
+      <item itemvalue="Python tests.Python tests for playwright.test_playwright_basics.test_child_window_handle" />
+      <item itemvalue="Python tests.Python tests in test_playwright_basics.py" />
     </list>
     <recent_temporary>
       <list>
@@ -417,6 +420,7 @@
       <workItem from="1773416944569" duration="1057000" />
       <workItem from="1773463368407" duration="1739000" />
       <workItem from="1773465129795" duration="4617000" />
+      <workItem from="1773482737744" duration="1717000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first Commmit">
       <option name="closed" value="true" />
@@ -426,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772817049266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- page object factoring code">
+      <option name="closed" value="true" />
+      <created>1773482769527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773482769527</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +446,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This is the first Commmit" />
-    <option name="LAST_COMMIT_MESSAGE" value="This is the first Commmit" />
+    <MESSAGE value="- page object factoring code" />
+    <option name="LAST_COMMIT_MESSAGE" value="- page object factoring code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -468,11 +481,6 @@
           <url>file://$PROJECT_DIR$/playwright/test_more_validation.py</url>
           <line>28</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/playwright/utils/apiBase.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/playwright/test_network_mock_response.py</url>
@@ -512,6 +520,6 @@
     <SUITE FILE_PATH="coverage/PytestPython$pytest_in_PyCharm_2025_3_3.coverage" NAME="pytest in $AffectedModuleNames$ Coverage Results" MODIFIED="1772886530169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/PytestPython$main.coverage" NAME="main Coverage Results" MODIFIED="1772817096474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestPython$pytest_for_test_TestPyTestValidation.coverage" NAME="pytest for test_TestPyTestValidation Coverage Results" MODIFIED="1772877441275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PytestPython$.coverage" NAME=" Coverage Results" MODIFIED="1773482460810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestPython$.coverage" NAME=" Coverage Results" MODIFIED="1773484069102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
