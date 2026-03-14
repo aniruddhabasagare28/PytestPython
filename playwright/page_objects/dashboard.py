@@ -6,6 +6,6 @@ class dashboard:
         self.page = page
 
     def navigate_to_order(self):
-        self.page.get_by_role("button", name="ORDERS").click()
+        self.page.locator("button[routerlink='/dashboard/myorders']").click()
         orderHistory = OrderHistory(self.page)
         return orderHistory
