@@ -37,4 +37,5 @@ def test_e2e_web_api(playwright:Playwright, user_credentials):
     orderDetailsPage = orderHistoryPage.selectOrder(order_id)
 
     orderDetailsPage.verifyOrderMessage()
+    context.close()
 
