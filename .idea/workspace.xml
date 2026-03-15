@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9748df1c-6750-44f4-90c4-90a290bb7083" name="Changes" comment="pushing code - playwright page creation in conftest.py">
-      <change afterPath="$PROJECT_DIR$/playwright/utils/apiFrameworkBase.py" afterDir="false" />
+    <list default="true" id="9748df1c-6750-44f4-90c4-90a290bb7083" name="Changes" comment="Separating the - data variation for sepecif test cases">
+      <change afterPath="$PROJECT_DIR$/playwright/features/orderTransaction.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playwright/test_orderTransaction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playwright/page_objects/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/page_objects/dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playwright/test_framework_web_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/test_framework_web_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playwright/test_network_mock_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/test_network_mock_response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playwright/utils/apiBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/utils/apiBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="23" />
+    <option name="cachedIndexableFilesCount" value="38" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,6 +40,10 @@
     &quot;accountId&quot;: &quot;f62b0004-b791-4100-9be3-b8ed3a52005d&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Programs/Python/Python310/Lib/site-packages/_pytest/python.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/AppData/Local/Programs/Python/Python310/Lib/site-packages/pluggy/_callers.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -80,8 +82,10 @@
     "Python tests.Python tests in TestPyTestValidation.py.executor": "Run",
     "Python tests.Python tests in test_TestPyTestValidation.py.executor": "Run",
     "Python tests.Python tests in test_network_mock_response.py.executor": "Run",
+    "Python tests.Python tests in test_orderTransaction.py.executor": "Run",
     "Python tests.Python tests in test_playwright_basics.py.executor": "Run",
     "Python tests.Python tests in test_web_api.py.executor": "Run",
+    "Python tests.pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page.executor": "Run",
     "Python tests.pytest for test_TestPyTestValidation.executor": "Run",
     "Python tests.pytest in $AffectedModuleNames$.executor": "Run",
     "Python tests.pytest in PyCharm 2025.3.3.executor": "Run",
@@ -124,7 +128,7 @@
       <recent name="D:\UdemyCourse\Pycharm\PytestPython\pytestDir" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_web_api.py">
+  <component name="RunManager" selected="Python tests.Python tests in test_orderTransaction.py">
     <configuration name="test_network_mock_response" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PytestPython" />
       <option name="ENV_FILES" value="" />
@@ -180,23 +184,6 @@
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;--headed&quot;" />
       <option name="_new_target" value="&quot;playwright.test_more_validation.test_confirm_popup&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for playwright.test_more_validation.test_handle_alert" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PytestPython" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;--headed --slowmo 1000&quot;" />
-      <option name="_new_target" value="&quot;playwright.test_more_validation.test_handle_alert&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -268,23 +255,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for playwright.test_network_mock_response.test_network" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PytestPython" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;--headed&quot;" />
-      <option name="_new_target" value="&quot;playwright.test_network_mock_response.test_network&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for playwright.test_network_mock_response.test_session_storage" type="tests" factoryName="Autodetect" nameIsGenerated="true">
       <module name="PytestPython" />
       <option name="ENV_FILES" value="" />
@@ -336,6 +306,23 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_orderTransaction.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PytestPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/playwright/test_orderTransaction.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_web_api.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PytestPython" />
       <option name="ENV_FILES" value="" />
@@ -351,6 +338,25 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/playwright/test_web_api.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PytestPython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/AppData/Local/Programs/Python/Python310/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in PyCharm 2025.3.3" type="tests" factoryName="py.test" nameIsGenerated="true">
@@ -383,19 +389,19 @@
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_table" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_ui_cheks" />
       <item itemvalue="Python tests.pytest in PyCharm 2025.3.3" />
+      <item itemvalue="Python tests.Python tests in test_orderTransaction.py" />
+      <item itemvalue="Python tests.pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page" />
       <item itemvalue="Python tests.Python tests in test_network_mock_response.py" />
       <item itemvalue="Python tests.Python tests in test_web_api.py" />
       <item itemvalue="Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api" />
-      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_network" />
-      <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_alert" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_orderTransaction.py" />
+        <item itemvalue="Python tests.pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page" />
         <item itemvalue="Python tests.Python tests in test_web_api.py" />
         <item itemvalue="Python tests.Python tests in test_network_mock_response.py" />
         <item itemvalue="Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api" />
-        <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_network" />
-        <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_alert" />
       </list>
     </recent_temporary>
   </component>
@@ -426,7 +432,9 @@
       <workItem from="1773463368407" duration="1739000" />
       <workItem from="1773465129795" duration="4617000" />
       <workItem from="1773482737744" duration="2753000" />
-      <workItem from="1773502040100" duration="5196000" />
+      <workItem from="1773502040100" duration="8231000" />
+      <workItem from="1773549994186" duration="3176000" />
+      <workItem from="1773586332121" duration="2894000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first Commmit">
       <option name="closed" value="true" />
@@ -468,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773506815948</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Separating the - data variation for sepecif test cases">
+      <option name="closed" value="true" />
+      <created>1773508157387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773508157387</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +495,8 @@
     <MESSAGE value="- page object factoring code" />
     <MESSAGE value="- page object factoring code - order details page and order history page" />
     <MESSAGE value="pushing code - playwright page creation in conftest.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="pushing code - playwright page creation in conftest.py" />
+    <MESSAGE value="Separating the - data variation for sepecif test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separating the - data variation for sepecif test cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -556,6 +573,7 @@
     <SUITE FILE_PATH="coverage/PytestPython$pytest_in_PyCharm_2025_3_3.coverage" NAME="pytest in $AffectedModuleNames$ Coverage Results" MODIFIED="1772886530169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/PytestPython$main.coverage" NAME="main Coverage Results" MODIFIED="1772817096474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PytestPython$pytest_for_test_TestPyTestValidation.coverage" NAME="pytest for test_TestPyTestValidation Coverage Results" MODIFIED="1772877441275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PytestPython$.coverage" NAME=" Coverage Results" MODIFIED="1773507841961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestPython$pytest_for_playwright_test_orderTransaction_test_verify_order_success_message_shown_in_details_page.coverage" NAME="pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page Coverage Results" MODIFIED="1773587527820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PytestPython$.coverage" NAME=" Coverage Results" MODIFIED="1773587620351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
