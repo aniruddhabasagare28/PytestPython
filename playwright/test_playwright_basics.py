@@ -47,7 +47,7 @@ def test_firefox_browser(playwright:Playwright):
     page.get_by_label("Username:").fill("rahulshettyacademy")
     page.get_by_label("Password:").fill("Learning")
     page.get_by_role("combobox").select_option("teach")
-    page.locator("#terms").check()
+    page.locator("#terms").check(force=True)
     page.get_by_role("link", name="terms and conditions").click()
     page.get_by_role("button", name="Sign In").click()
     expect(page.get_by_text("Incorrect username/password.")).to_be_visible()

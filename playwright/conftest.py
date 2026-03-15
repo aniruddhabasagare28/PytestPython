@@ -1,4 +1,5 @@
 import pytest
+import os
 
 
 @pytest.fixture(scope="session")   #Module, function , calss
@@ -14,11 +15,25 @@ def pytest_addoption(parser):
 @pytest.fixture
 def browserInstance(playwright, request):
     browser_name = request.config.getoption("browser_name")   #request is global fixture provided by playwright , it can be used to read the command line arguments
+    browser_name = (browser_name or "").strip()
+    if browser_name in {"", "$browser_name", "${browser_name}", "%browser_name%"}:
+        browser_name = (
+            os.getenv("browser_name")
+            or os.getenv("BROWSER_NAME")
+            or "chrome"
+        )
 
-    if browser_name == "chrome":
-        browser = playwright.chromium.launch(headless=False)
+    browser_name = browser_name.lower()
+    headless = bool(os.getenv("CI") or os.getenv("JENKINS_URL"))
+
+    if browser_name in {"chrome", "chromium", "edge"}:
+        browser = playwright.chromium.launch(headless=headless)
     elif browser_name == "firefox":
-        browser = playwright.firefox.launch(headless=False)
+        browser = playwright.firefox.launch(headless=headless)
+    else:
+        raise pytest.UsageError(
+            f"Unsupported --browser_name value '{browser_name}'. Use chrome or firefox."
+        )
 
     context = browser.new_context()
     page = context.new_page()

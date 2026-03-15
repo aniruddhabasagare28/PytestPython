@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9748df1c-6750-44f4-90c4-90a290bb7083" name="Changes" comment="Separating the - data variation for sepecif test cases">
-      <change afterPath="$PROJECT_DIR$/playwright/features/orderTransaction.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playwright/test_orderTransaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="9748df1c-6750-44f4-90c4-90a290bb7083" name="Changes" comment="pushing BDD framework">
+      <change beforePath="$PROJECT_DIR$/playwright/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +431,7 @@
       <workItem from="1773482737744" duration="2753000" />
       <workItem from="1773502040100" duration="8231000" />
       <workItem from="1773549994186" duration="3176000" />
-      <workItem from="1773586332121" duration="2894000" />
+      <workItem from="1773586332121" duration="3764000" />
     </task>
     <task id="LOCAL-00001" summary="This is the first Commmit">
       <option name="closed" value="true" />
@@ -484,7 +481,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773508157387</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="pushing BDD framework">
+      <option name="closed" value="true" />
+      <created>1773594104792</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773594104792</updated>
+    </task>
+    <task id="LOCAL-00008" summary="pushing BDD framework">
+      <option name="closed" value="true" />
+      <created>1773594129816</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773594129816</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +509,8 @@
     <MESSAGE value="- page object factoring code - order details page and order history page" />
     <MESSAGE value="pushing code - playwright page creation in conftest.py" />
     <MESSAGE value="Separating the - data variation for sepecif test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separating the - data variation for sepecif test cases" />
+    <MESSAGE value="pushing BDD framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushing BDD framework" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
