@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9748df1c-6750-44f4-90c4-90a290bb7083" name="Changes" comment="pushing BDD framework">
-      <change beforePath="$PROJECT_DIR$/playwright/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright/test_web_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/playwright/test_web_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,67 +54,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for TestPyTestValidation.test_initialCheck.executor": "Run",
-    "Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api.executor": "Run",
-    "Python tests.Python tests for playwright.test_more_validation.test_confirm_popup.executor": "Run",
-    "Python tests.Python tests for playwright.test_more_validation.test_handle_alert.executor": "Run",
-    "Python tests.Python tests for playwright.test_more_validation.test_handle_frame.executor": "Run",
-    "Python tests.Python tests for playwright.test_more_validation.test_handle_table.executor": "Run",
-    "Python tests.Python tests for playwright.test_more_validation.test_ui_cheks.executor": "Run",
-    "Python tests.Python tests for playwright.test_network_mock_request.test_network.executor": "Run",
-    "Python tests.Python tests for playwright.test_network_mock_response.test_session_storage.executor": "Run",
-    "Python tests.Python tests for playwright.test_network_one.test_network.executor": "Debug",
-    "Python tests.Python tests for playwright.test_playwright_basics.test_child_window_handle.executor": "Run",
-    "Python tests.Python tests for playwright.test_playwright_basics.test_firefox_browser.executor": "Run",
-    "Python tests.Python tests for playwright.test_playwright_basics.test_login_practice.executor": "Run",
-    "Python tests.Python tests for playwright.test_playwright_basics.test_login_practice_wrong_credentials.executor": "Run",
-    "Python tests.Python tests for playwright.test_playwright_basics.test_playwright_basics_shortcut.executor": "Run",
-    "Python tests.Python tests for playwright.test_web_api.test_e2e_web_api.executor": "Run",
-    "Python tests.Python tests for playwright.utils.test_framework_web_api.test_e2e_web_api.executor": "Run",
-    "Python tests.Python tests for test_TestPyTestValidation.test_initialCheck.executor": "Run",
-    "Python tests.Python tests in PytestPython.executor": "Run",
-    "Python tests.Python tests in Test2PyTestValidation.py.executor": "Run",
-    "Python tests.Python tests in TestPyTestValidation.py.executor": "Run",
-    "Python tests.Python tests in test_TestPyTestValidation.py.executor": "Run",
-    "Python tests.Python tests in test_network_mock_response.py.executor": "Run",
-    "Python tests.Python tests in test_orderTransaction.py.executor": "Run",
-    "Python tests.Python tests in test_playwright_basics.py.executor": "Run",
-    "Python tests.Python tests in test_web_api.py.executor": "Run",
-    "Python tests.pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page.executor": "Run",
-    "Python tests.pytest for test_TestPyTestValidation.executor": "Run",
-    "Python tests.pytest in $AffectedModuleNames$.executor": "Run",
-    "Python tests.pytest in PyCharm 2025.3.3.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test_network_one.pay.executor": "Debug",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/UdemyCourse/Pycharm/PytestPython/playwright/utils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for TestPyTestValidation.test_initialCheck.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_more_validation.test_confirm_popup.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_more_validation.test_handle_alert.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_more_validation.test_handle_frame.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_more_validation.test_handle_table.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_more_validation.test_ui_cheks.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_network_mock_request.test_network.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_network_mock_response.test_session_storage.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_network_one.test_network.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_child_window_handle.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_firefox_browser.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_login_practice.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_login_practice_wrong_credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_playwright_basics.test_playwright_basics_shortcut.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.test_web_api.test_e2e_web_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for playwright.utils.test_framework_web_api.test_e2e_web_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_TestPyTestValidation.test_initialCheck.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in PytestPython.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Test2PyTestValidation.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in TestPyTestValidation.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_TestPyTestValidation.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_network_mock_response.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_orderTransaction.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_playwright_basics.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_web_api.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_TestPyTestValidation.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in $AffectedModuleNames$.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in PyCharm 2025.3.3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_network_one.pay.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/UdemyCourse/Pycharm/PytestPython/playwright/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\UdemyCourse\Pycharm\PytestPython\playwright\utils" />
@@ -378,19 +379,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test_network_mock_response" />
-      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_session_storage" />
-      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_request.test_network" />
-      <item itemvalue="Python tests.Python tests for playwright.test_web_api.test_e2e_web_api" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_confirm_popup" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_frame" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_handle_table" />
       <item itemvalue="Python tests.Python tests for playwright.test_more_validation.test_ui_cheks" />
+      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_request.test_network" />
+      <item itemvalue="Python tests.Python tests for playwright.test_network_mock_response.test_session_storage" />
+      <item itemvalue="Python tests.Python tests for playwright.test_web_api.test_e2e_web_api" />
       <item itemvalue="Python tests.pytest in PyCharm 2025.3.3" />
-      <item itemvalue="Python tests.Python tests in test_orderTransaction.py" />
-      <item itemvalue="Python tests.pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page" />
-      <item itemvalue="Python tests.Python tests in test_network_mock_response.py" />
-      <item itemvalue="Python tests.Python tests in test_web_api.py" />
       <item itemvalue="Python tests.Python tests for playwright.test_framework_web_api.test_e2e_web_api" />
+      <item itemvalue="Python tests.Python tests in test_network_mock_response.py" />
+      <item itemvalue="Python tests.Python tests in test_orderTransaction.py" />
+      <item itemvalue="Python tests.Python tests in test_web_api.py" />
+      <item itemvalue="Python tests.pytest for playwright.test_orderTransaction.test_verify_order_success_message_shown_in_details_page" />
     </list>
     <recent_temporary>
       <list>

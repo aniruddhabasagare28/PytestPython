@@ -1,7 +1,7 @@
 from playwright.sync_api import Playwright, expect
 from pytest_playwright.pytest_playwright import new_context
 
-from utils.apiBase import APIUtils
+from utils.apipytestBase import APIUtils
 
 
 def test_e2e_web_api(playwright:Playwright):
